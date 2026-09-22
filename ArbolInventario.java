@@ -25,8 +25,12 @@ public class ArbolInventario {
         raiz = insertarRecursivo(raiz, id, nombre);
     }
 
-    private Producto insertarRecursivo(Producto nodoActual, int id, String nombre) {
-        // Caso base: llegamos a un espacio vacío, aquí va el nuevo nodo
+        private Producto insertarRecursivo(Producto nodoActual, int id, String nombre) {
+        // Caso base: si el puntero llegó a null, significa que encontramos
+        // el lugar vacío correcto en el árbol para insertar el nuevo nodo.
+        // Este nuevo nodo se conecta automáticamente al padre porque el
+        // resultado de esta llamada se asigna a nodoActual.izquierdo o
+        // nodoActual.derecho más abajo en la recursión.
         if (nodoActual == null) {
             return new Producto(id, nombre);
         }
