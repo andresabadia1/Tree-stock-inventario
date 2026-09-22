@@ -93,11 +93,11 @@ Saliendo del sistema. ¡Hasta luego!
 
 **Registro de un producto (inserción)**
 
-![Registro de producto](Captura 2.0.PNG)
+![Registro de producto](Captura%202.0.PNG)
 
 **Búsqueda de un producto**
 
-![Búsqueda de producto](Captura 3.0.PNG)
+![Búsqueda de producto](Captura%203.0.PNG)
 
 ## 🚀 Posibles mejoras futuras
 
