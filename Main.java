@@ -52,21 +52,26 @@ public class Main {
      * Solicita al usuario el ID y nombre de un producto y lo inserta en el árbol.
      */
     private static void registrarProducto(Scanner scanner, ArbolInventario inventario) {
-        System.out.print("Ingrese el ID del producto: ");
-        while (!scanner.hasNextInt()) {
-            System.out.print("ID inválido. Ingrese un número entero: ");
-            scanner.next();
-        }
-        int id = scanner.nextInt();
-        scanner.nextLine(); // limpiar el salto de línea pendiente
-
-        System.out.print("Ingrese el nombre del producto: ");
-        String nombre = scanner.nextLine();
-
-        inventario.insertar(id, nombre);
-        System.out.println("Producto registrado correctamente.");
+    System.out.print("Ingrese el ID del producto: ");
+    while (!scanner.hasNextInt()) {
+        System.out.print("ID inválido. Ingrese un número entero: ");
+        scanner.next();
     }
+    int id = scanner.nextInt();
+    scanner.nextLine(); // limpiar el salto de línea pendiente
 
+    String nombre;
+    do {
+        System.out.print("Ingrese el nombre del producto: ");
+        nombre = scanner.nextLine().trim();
+        if (nombre.isEmpty()) {
+            System.out.println("El nombre no puede estar vacío. Intente de nuevo.");
+        }
+    } while (nombre.isEmpty());
+
+    inventario.insertar(id, nombre);
+    System.out.println("Producto registrado correctamente.");
+}
     /**
      * Solicita un ID al usuario y verifica si el producto existe en el árbol.
      */
