@@ -89,19 +89,15 @@ Saliendo del sistema. ¡Hasta luego!
 
 **Menú principal**
 
-![Menú principal](RUTA_O_ENLACE_A_TU_CAPTURA_1.png)
+![Menú principal](Captura.PNG)
 
 **Registro de un producto (inserción)**
 
-![Registro de producto](RUTA_O_ENLACE_A_TU_CAPTURA_2.png)
+![Registro de producto](Captura 2.0.PNG)
 
 **Búsqueda de un producto**
 
-![Búsqueda de producto](RUTA_O_ENLACE_A_TU_CAPTURA_3.png)
-
-## 🎥 Video de sustentación
-
-[Enlace al video de sustentación](PEGA_AQUI_EL_ENLACE_DE_TU_VIDEO)
+![Búsqueda de producto](Captura 3.0.PNG)
 
 ## 🚀 Posibles mejoras futuras
 
